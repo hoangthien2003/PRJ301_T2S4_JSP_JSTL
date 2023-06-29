@@ -24,6 +24,7 @@ import sample.user.UserDTO;
 public class SearchController extends HttpServlet {
     private static final String ERROR = "admin.jsp";
     private static final String SUCCESS = "admin.jsp";
+    
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");

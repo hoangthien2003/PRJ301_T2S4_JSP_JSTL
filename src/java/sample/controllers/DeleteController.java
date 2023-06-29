@@ -28,7 +28,7 @@ public class DeleteController extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-    String url = ERROR;
+        String url = ERROR;
          try {
             String userID = request.getParameter("userID");
             UserDAO userDAO = new UserDAO();

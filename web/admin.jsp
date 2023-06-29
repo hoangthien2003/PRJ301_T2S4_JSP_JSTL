@@ -16,9 +16,6 @@
     </head>
     <body>
         <h1>Admin World! </h1>
-        <c:if test="${sessionScope.LOGIN_USER == null || sessionScope.LOGIN_USER.roleID ne 'AD'}">
-            <c:redirect url="login.html"></c:redirect>
-        </c:if>
         Welcome: ${sessionScope.LOGIN_USER.userID}
 
         <form action="MainController">
